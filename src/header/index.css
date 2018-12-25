@@ -1,0 +1,15 @@
+.navbar-title {
+  padding: 10px 30px;
+}
+
+.navbar-title_right-side {
+  margin-left: 5px;
+}
+
+.custom-button {
+  border-style: none;
+  min-width: 105px;
+  font-size: 14px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}

@@ -1,11 +1,36 @@
-<nav className="navbar">
-  <div className="navbar-brand">
-    <div className="navbar-burger"><span></span></div>
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <div class="flex align-center navbar-title">
+      <span class="is-grey">Mickaël Mazouz</span>
+      <span class="navbar-title_right-side is-purple">
+        / Software developer</span
+      >
+    </div>
+
+    <a
+      role="button"
+      class="navbar-burger burger"
+      aria-label="menu"
+      aria-expanded="false"
+      data-target="navbarMenu"
+    >
+      <span aria-hidden="true"></span> <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
   </div>
-  <div className="navbar-menu">
-    <div className="navbar-end">
-      <a className="navbar-item" to="/sign-in"> <span>titi</span> </a>
-      <a className="navbar-item" to="/sign-up"> <span>toto</span> </a>
+
+  <div id="navbarMenu" class="navbar-menu">
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button custom-button is-purple">General</a>
+          <a class="button custom-button is-purple"> About Me</a>
+          <a class="button custom-button is-purple"> Skills </a>
+          <a class="button custom-button is-purple"> Education </a>
+          <a class="button custom-button is-purple"> Experience</a>
+          <a class="button custom-button is-purple"> Contact </a>
+        </div>
+      </div>
     </div>
   </div>
 </nav>

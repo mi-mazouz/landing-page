@@ -2,3 +2,27 @@ html,
 body {
   min-height: 100vh;
 }
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.direction-column {
+  flex-direction: column;
+}
+
+.is-purple {
+  color: #2626dc;
+}
+
+.is-grey {
+  color: #b7b7b7;
+}
