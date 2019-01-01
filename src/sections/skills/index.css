@@ -1,0 +1,73 @@
+.purple-bar-wrapper {
+  margin-bottom: 10px;
+}
+
+.c-skill {
+  width: 85%;
+}
+
+.node-express-skill {
+  width: 90%;
+}
+
+.react-redux-skill {
+  width: 90%;
+}
+
+.php-skill {
+  width: 15%;
+}
+
+.python-skill {
+  width: 20%;
+}
+
+.html-css-skill {
+  width: 70%;
+}
+
+.unix-skill {
+  width: 65%;
+}
+
+.nginx-skill {
+  width: 65%;
+}
+
+.js-skill {
+  width: 90%;
+}
+
+.postgre-skill {
+  width: 60%;
+}
+
+.mysql-skill {
+  width: 40%;
+}
+
+.sequelize-skill {
+  width: 70%;
+}
+
+.aws-skill {
+  width: 60%;
+}
+
+.flask-skill {
+  width: 15%;
+}
+
+.devops-skill {
+  width: 80%;
+}
+
+.cursor {
+  position: absolute;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #2626dc;
+}
