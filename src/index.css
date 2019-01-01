@@ -119,15 +119,23 @@ body {
   text-align: center;
 }
 
-/* @media (max-width: 768px) {
-  .header-code-block {
+.footer-code-block {
+  min-height: 25%;
+}
+
+@media (max-width: 768px) {
+  .footer-code-block {
+    min-height: 18%;
+  }
+  /* .header-code-block {
     right: -1920px !important;
   }
   .first-middle-code-block {
     left: -900px !important;
-  }
+  } */
 }
 
+/*
 .header-code-block {
   right: -1425px;
   top: -530px;

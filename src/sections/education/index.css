@@ -6,8 +6,14 @@
   min-height: 400px;
 }
 
+@media (max-width: 568px) {
+  .fac {
+    left: 25% !important;
+  }
+}
+
 .fac {
-  left: 45%;
+  left: 33.33%;
 }
 
 .fac-infos-wrapper {
@@ -15,5 +21,5 @@
 }
 
 .logo {
-  width: 70px;
+  height: 70px;
 }
