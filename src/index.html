@@ -8,6 +8,10 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
     <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css"
     />
@@ -15,6 +19,8 @@
     <link rel="stylesheet" type="text/css" href="header/index.css" />
     <link rel="stylesheet" type="text/css" href="sections/main/index.css" />
     <link rel="stylesheet" type="text/css" href="sections/skills/index.css" />
+    <link rel="stylesheet" type="text/css" href="sections/other/index.css" />
+    <link rel="stylesheet" type="text/css" href="footer/index.css" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -34,6 +40,8 @@
         $("#skillsSection").load("./sections/skills/index.html");
         $("#educationSection").load("./sections/education/index.html");
         $("#experienceSection").load("./sections/experience/index.html");
+        $("#otherSection").load("./sections/other/index.html");
+        $("#footer").load("./footer/index.html");
       });
     </script>
   </head>
@@ -44,7 +52,7 @@
       alt=""
     /> -->
     <header id="header"></header>
-    <section class="section">
+    <sections class="section">
       <section
         id="mainSection"
         class="section"
@@ -59,7 +67,13 @@
       <section id="skillsSection" class="section"></section>
       <section id="educationSection" class="section"></section>
       <section id="experienceSection" class="section"></section>
-    </section>
-    <!-- <footer class="footer"></footer> -->
+      <section id="otherSection" class="section"></section>
+    </sections>
+    <img
+      class="absolute bottom-0 left-0"
+      src="./assets/footer-code-block.png"
+      alt=""
+    />
+    <footer id="footer" class="footer"></footer>
   </body>
 </html>

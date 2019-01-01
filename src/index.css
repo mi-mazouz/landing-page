@@ -3,6 +3,11 @@ body {
   min-height: 100vh;
 }
 
+footer {
+  background-color: white !important;
+  padding: 3rem 1.5rem 4rem !important;
+}
+
 body {
   overflow-x: hidden;
   position: relative;
@@ -24,6 +29,10 @@ body {
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .direction-column {
   flex-direction: column;
 }
@@ -38,6 +47,22 @@ body {
 
 .is-transparent {
   background-color: transparent;
+}
+
+.is-white {
+  color: white;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.left-0 {
+  left: 0;
 }
 
 .is-purple {
