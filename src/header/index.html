@@ -1,17 +1,12 @@
-<nav
-  class="navbar is-transparent is-fixed-top"
-  role="navigation"
-  aria-label="main navigation"
->
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <div class="flex align-center navbar-title">
-      <span class="is-grey">Mickaël Mazouz</span>
-      <span class="navbar-title_right-side is-purple">
-        / Software developer</span
-      >
+    <div class="language-typography-wrapper">
+      <span class="language-typography">FR</span>
+      <span class="language-typography-separator">/</span>
+      <span class="language-typography">EN</span>
     </div>
-
     <a
+      id="burgerLink"
       role="button"
       class="navbar-burger burger"
       aria-label="menu"
@@ -22,19 +17,20 @@
       <span aria-hidden="true"></span>
     </a>
   </div>
-
-  <div id="navbarMenu" class="navbar-menu">
-    <div class="navbar-end">
+  <div id="navbarMenu" class="navbar-menu animated">
+    <div id="navbarEnd" class="navbar-end">
       <div class="navbar-item">
-        <div class="buttons">
-          <a class="button custom-button is-purple">About Me</a>
-          <a class="button custom-button is-purple">Skill</a>
-          <a class="button custom-button is-purple">Education</a>
-          <a class="button custom-button is-purple">Experience</a>
-          <a class="button custom-button is-purple">Portfolio</a>
-          <a class="button custom-button is-purple">Contact</a>
+        <div id="navbarButtons" class="buttons">
+          <a class="button">HOME</a> <a class="button">Education</a>
+          <a class="button">Experience</a> <a class="button">Skills</a>
+          <a class="button">Services</a> <a class="button">Portfolio</a>
+          <a class="button">Contact</a>
         </div>
       </div>
     </div>
   </div>
+
+  <script>
+    $.getScript("./header/script.js");
+  </script>
 </nav>
