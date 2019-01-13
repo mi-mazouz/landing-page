@@ -1,5 +1,5 @@
 .navbar-brand {
-  background-color: #202020;
+  background-color: #333333;
 }
 
 .language-typography-wrapper {
@@ -10,17 +10,18 @@
 }
 
 .language-typography {
-  color: rgba(255, 255, 255, 0.6) !important;
+  color: #9da0a7 !important;
+  opacity: 0.6;
   cursor: pointer;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .language-typography-separator {
   color: white;
   font-size: 14px;
   margin: 0 5px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .language-typography:hover {
@@ -32,43 +33,51 @@
   width: 5.25rem;
 }
 
+.navbar-burger:hover {
+  background-color: #333333;
+}
+
 .navbar-burger:hover > span {
   transition: 500ms;
   color: white !important;
 }
 
 .navbar-burger > span {
-  color: rgba(255, 255, 255, 0.6) !important;
+  color: #9da0a7 !important;
+  opacity: 0.6;
   border-radius: 5px;
+  transition: 500ms;
+  padding: 2px;
   height: 3px !important;
   width: 30px !important;
 }
 
 .navbar-menu {
-  background-color: #202020;
+  background-color: #333333;
   animation-duration: 1s;
   position: relative;
 }
 
-.button {
-  color: rgba(255, 255, 255, 0.6) !important;
-  border-style: none;
-  font-weight: 400;
+.navbar-button {
+  color: #9da0a7 !important;
+  opacity: 0.6;
+  font-weight: 500;
   text-transform: uppercase;
   transition: 500ms;
-  background-color: transparent;
   letter-spacing: 2px;
   font-size: 14px;
 }
 
-.button:hover {
+.navbar-button:hover {
+  transition: 500ms;
   color: white !important;
 }
 
 @media screen and (max-width: 1088px) {
   .navbar-menu.is-active {
-    background-color: #202020;
+    background-color: #333333;
     padding: 0;
+    box-shadow: unset;
     min-height: 285px;
   }
 

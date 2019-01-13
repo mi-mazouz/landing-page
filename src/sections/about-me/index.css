@@ -1,0 +1,106 @@
+.columns {
+  margin: 0;
+}
+
+.column {
+  padding: 0;
+}
+
+.about-me-card {
+  background-color: white;
+  min-height: 95vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+.about-me-card-wrapper {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.about-me-card-content {
+  padding: 30px;
+}
+
+.profile-picture {
+  height: auto;
+  width: 100%;
+}
+
+.about-me-card-footer {
+  padding: 35px;
+  width: 100%;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.email-icon {
+  font-size: 20px;
+  color: white;
+}
+
+.logo {
+  height: 20px;
+  right: 30%;
+  position: absolute;
+  bottom: 30%;
+  z-index: 1;
+}
+
+.icon-button {
+  height: 50px;
+  width: 50px;
+}
+
+.icon-button-wrapper:hover > :nth-child(2) {
+  background-color: #9da0a7;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.keys-typography {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.values-typography {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #9da0a7;
+}
+
+.wrapper {
+  padding: 10px 0;
+}
+
+.about-me-description {
+  text-align: justify;
+  line-height: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 30px;
+}
+
+.animation-wrapper {
+  animation-duration: 2s;
+}
+
+@media screen and (min-height: 1088px) {
+  .about-me-card-footer {
+    right: 0;
+    bottom: 0;
+    position: absolute;
+  }
+}

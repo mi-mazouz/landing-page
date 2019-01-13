@@ -1,9 +1,14 @@
-<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+<nav
+  id="navbar"
+  class="navbar is-fixed-top"
+  role="navigation"
+  aria-label="main navigation"
+>
   <div class="navbar-brand">
     <div class="language-typography-wrapper">
-      <span class="language-typography">FR</span>
+      <span class="button navbar-button padding-0 language-typography">FR</span>
       <span class="language-typography-separator">/</span>
-      <span class="language-typography">EN</span>
+      <span class="button navbar-button padding-0 language-typography">EN</span>
     </div>
     <a
       id="burgerLink"
@@ -13,23 +18,25 @@
       aria-expanded="false"
       data-target="navbarMenu"
     >
-      <span aria-hidden="true"></span> <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
+      <span class="button navbar-button" aria-hidden="true"></span>
+      <span class="button navbar-button" aria-hidden="true"></span>
+      <span class="button navbar-button" aria-hidden="true"></span>
     </a>
   </div>
-  <div id="navbarMenu" class="navbar-menu animated">
-    <div id="navbarEnd" class="navbar-end">
+  <div id="navbarMenu" class="navbar-menu">
+    <div id="navbarEnd" class="navbar-end animated">
       <div class="navbar-item">
         <div id="navbarButtons" class="buttons">
-          <a class="button">HOME</a> <a class="button">Education</a>
-          <a class="button">Experience</a> <a class="button">Skills</a>
-          <a class="button">Services</a> <a class="button">Portfolio</a>
-          <a class="button">Contact</a>
+          <a class="button navbar-button">HOME</a>
+          <a class="button navbar-button">Education</a>
+          <a class="button navbar-button">Experience</a>
+          <a class="button navbar-button">Skills</a>
+          <a class="button navbar-button">Services</a>
+          <a class="button navbar-button">Portfolio</a>
         </div>
       </div>
     </div>
   </div>
-
   <script>
     $.getScript("./header/script.js");
   </script>
