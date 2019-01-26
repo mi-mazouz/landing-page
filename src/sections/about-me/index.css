@@ -7,10 +7,12 @@
 }
 
 .about-me-card {
+  z-index: 2;
+  border-radius: 3px;
   background-color: white;
-  min-height: 95vh;
+  min-height: 85vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
@@ -26,11 +28,14 @@
 
 .profile-picture {
   height: auto;
+  border-top-left-radius: 3px;
   width: 100%;
 }
 
 .about-me-card-footer {
   padding: 35px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
   width: 100%;
 }
 

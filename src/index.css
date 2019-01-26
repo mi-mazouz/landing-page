@@ -1,7 +1,10 @@
 body {
   min-height: 100vh;
+  max-width: 100wh;
+  overflow: hidden;
+  position: relative;
   background-color: #efefef;
-  font-family: "Raleway", sans-serif !important;
+  font-family: "Montserrat", Arial, sans-serif !important;
 }
 
 .is-white {
@@ -9,7 +12,7 @@ body {
 }
 
 .is-main-grey {
-  color: #333333;
+  color: #4f4f4f;
 }
 
 .is-secondary-grey {
@@ -20,9 +23,27 @@ body {
   background-color: #e8676b !important;
 }
 
+.header-and-about-me-container {
+  position: relative;
+  background-image: url("assets/first-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#about-me::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: -50px;
+  height: 200px;
+  width: 130%;
+  background-color: #efefef;
+  transform: rotate(-5deg);
+  z-index: 1;
+}
+
 .section:first-child {
   margin-top: 52px;
-  background-color: #333333;
   height: 80vh;
 }
 

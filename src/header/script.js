@@ -32,22 +32,8 @@ function onClickBurgerLink() {
   }
 }
 
-// function handleWindowScroll(a) {
-//   const navbar = document.getElementById("navbar");
-
-//   console.log(window.scrollY, navbar.style.backgroundColor);
-//   if (window.scrollY > 0) {
-//     navbar.style.backgroundColor = "#9da0a7";
-//   } else {
-//     navbar.style.backgroundColor = "#333333";
-//   }
-
-//   console.log(window.scrollY, navbar.style.backgroundColor);
-// }
-
 const burgerLink = document.getElementById("burgerLink");
 const isMarginWillApply = true;
 
 handleBugerBarsMarginTop(burgerLink, isMarginWillApply);
-// window.onscroll = handleWindowScroll;
 burgerLink.onclick = onClickBurgerLink;
