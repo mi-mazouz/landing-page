@@ -1,0 +1,93 @@
+<div class="header-background"></div>
+<div class="navbar-mobile">
+  <i
+    id="close-menu-button"
+    onclick="onCloseMenuButtonClick()"
+    class="material-icons close-icon"
+    >close</i
+  >
+  <div class="mobile-menu-item-container">
+    <a name="about">about</a>
+    <a name="skills">skills</a>
+    <a name="portfolio">portfolio</a>
+    <a name="services">services</a>
+    <a name="experience">experience</a>
+    <a name="education">education</a>
+    <a name="pricing">pricing</a>
+    <a name="contact">contact</a>
+  </div>
+</div>
+<nav
+  class="navbar animated fadeInDown"
+  role="navigation"
+  aria-label="main navigation"
+>
+  <div class="navbar-brand">
+    <div class="navbar-item traduction-container">
+      <img
+        src="../assets/france-flag-round-icon.png"
+        onclick="changeLanguage('fr')"
+      />
+      <img
+        src="../assets/united-states-of-america-flag-round.png"
+        onclick="changeLanguage('en')"
+      />
+    </div>
+
+    <a
+      id="menu-button"
+      role="button"
+      onclick="onMenuButtonClick()"
+      class="navbar-burger button"
+      aria-label="menu"
+      aria-expanded="false"
+    >
+      menu
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <a name="about">
+          about
+        </a>
+      </div>
+      <div class="navbar-item">
+        <a name="skills">
+          skills
+        </a>
+      </div>
+      <div class="navbar-item">
+        <a>
+          portfolio
+        </a>
+      </div>
+      <div class="navbar-item">
+        <a>
+          services
+        </a>
+      </div>
+      <div class="navbar-item">
+        <a name="experience">
+          experience
+        </a>
+      </div>
+      <div class="navbar-item">
+        <a name="education">
+          education
+        </a>
+      </div>
+      <div class="navbar-item">
+        <a name="pricing">
+          pricing
+        </a>
+      </div>
+      <div class="navbar-item">
+        <a>
+          contact
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
