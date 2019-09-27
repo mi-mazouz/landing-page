@@ -10,10 +10,33 @@ function onCloseMenuButtonClick() {
   navbarMobile.css('transform', 'translateX(200px)');
 }
 
+function handleHeaderItemSection() {
+  const sections = $('section');
+
+  sections.map((_, section) => {
+    const links = $(`a[name=${section.id}]`);
+    const scrollTop = $(this).scrollTop();
+    const offsetTop = $(section).offset().top;
+
+    if (
+      scrollTop >= offsetTop - 1 &&
+      scrollTop <= offsetTop + section.offsetHeight - 1
+    ) {
+      links.map((_, link) => {
+        $(link).addClass('menu-item-selected');
+      });
+    } else {
+      links.map((_, link) => {
+        $(link).removeClass('menu-item-selected');
+      });
+    }
+  });
+}
+
 function handleNavBarCss() {
   const navbar = $('.navbar');
 
-  if (window.scrollY > 10) {
+  if ($(this).scrollTop() > 10) {
     navbar.addClass('is-fixed-top');
     navbar.css('backgroundColor', 'white');
     navbar.css('paddingTop', '0px');
@@ -25,9 +48,9 @@ function handleNavBarCss() {
 
     // prettier-ignore
     navbar.children().children().find('.navbar-item').map((_, element) => {
-      // prettier-ignore
-      $(element).children().css('color', '#3d4451');
-    });
+        // prettier-ignore
+        $(element).children().css('color', '#3d4451');
+      });
   } else {
     navbar.removeClass('is-fixed-top');
     navbar.css('backgroundColor', 'transparent');
@@ -37,8 +60,8 @@ function handleNavBarCss() {
 
     // prettier-ignore
     navbar.children().children().find('.navbar-item').map((_, element) => {
-      // prettier-ignore
-      $(element).children().css('color', 'rgba(255, 255, 255, 0.7)');
-    });
+        // prettier-ignore
+        $(element).children().css('color', 'rgba(255, 255, 255, 0.7)');
+      });
   }
 }
