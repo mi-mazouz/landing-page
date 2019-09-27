@@ -1,4 +1,4 @@
-.header-background {
+.header__background {
   background-image: url('../assets/background-image.jpg');
   height: 525px;
   top: 0;
@@ -30,7 +30,7 @@
 }
 
 .navbar-brand {
-  padding: 5px 15px;
+  padding: 5px 0px;
 }
 
 .navbar-burger {
@@ -108,15 +108,12 @@
   -moz-transition: -moz-transform 0.4s cubic-bezier(0.37, 0.15, 0.32, 0.94);
   transition: transform 0.4s cubic-bezier(0.37, 0.15, 0.32, 0.94);
   background-color: #e8676b;
-}
-
-@media (min-width: 1024px) {
-  .navbar-mobile {
+  @media (min-width: 1024px) {
     display: none !important;
   }
 }
 
-.close-icon {
+.header__menu-close-icon {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -127,7 +124,7 @@
   margin-left: auto;
 }
 
-.mobile-menu-item-container {
+.header__mobile-menu-item-container {
   overflow: auto;
   height: 100%;
   display: flex;
@@ -170,7 +167,13 @@
   }
 }
 
-.traduction-container {
+.menu-item-selected {
+  &:after {
+    width: 100% !important;
+  }
+}
+
+.header__traduction-container {
   justify-content: space-between;
   & > img {
     cursor: pointer;
