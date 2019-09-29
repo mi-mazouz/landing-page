@@ -33,16 +33,19 @@
     <header id="header"></header>
     <section id="about" class="section"></section>
     <section id="skills" class="section"></section>
+    <footer class="footer"></footer>
   </body>
   <script>
     $(function() {
       $('#header').load('html/header.html');
       $('#about').load('html/about.html');
+      $('#skills').load('html/skills.html');
     });
     $(document).ready(function() {
       $.getScript('./js/index.js');
       $.getScript('./js/header.js');
       $.getScript('./js/about.js');
+      $.getScript('./js/skills.js');
       $.getScript('./js/i18next.js');
     });
   </script>

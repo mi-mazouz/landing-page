@@ -30,6 +30,15 @@ function handleHeaderItemSection() {
         $(link).removeClass('menu-item-selected');
       });
     }
+
+    if (scrollTop + $(this).height() / 3 >= offsetTop - 80) {
+      const sectionContainer = $(`.${section.id}__container`);
+
+      sectionContainer.addClass('animated fadeInUp');
+      if (section.id === 'skills') {
+        setSkillsWidth();
+      }
+    }
   });
 }
 
@@ -65,3 +74,6 @@ function handleNavBarCss() {
       });
   }
 }
+
+handleNavBarCss();
+handleHeaderItemSection();
