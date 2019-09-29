@@ -9,7 +9,8 @@ const resources = {
       aboutTitle: 'Je suis',
       aboutDescription: 'Développeur Full Stack',
       address: 'Adresse',
-      available: 'Disponible'
+      available: 'Disponible',
+      skillsTitle: 'Compétence professionnelle'
     }
   },
   en: {
@@ -22,7 +23,8 @@ const resources = {
       aboutTitle: "I'm",
       aboutDescription: 'Developer Full Stack',
       address: 'Address',
-      available: 'Available'
+      available: 'Available',
+      skillsTitle: 'Professional skills'
     }
   }
 };
