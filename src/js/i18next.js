@@ -7,10 +7,16 @@ const resources = {
       education: 'éducation',
       pricing: 'tarifs',
       aboutTitle: 'Je suis',
-      aboutDescription: 'Développeur Full Stack',
+      aboutDescription: 'Développeur Full Stack - Freelance',
       address: 'Adresse',
       available: 'Disponible',
-      skillsTitle: 'Compétence professionnelle'
+      unavailable: 'Indisponible',
+      skillsTitle: 'Compétence professionnelle',
+      matchaSubtitle: 'Site de rencontre web et mobile',
+      laliloSubtitle: 'Programme de phonétique et de compréhension',
+      ouispoonSubtitle: 'Plateforme collaborative',
+      opus1IoSubtitle: 'Gérez votre entreprise de service plus efficacement',
+      willoSubtitle: 'Nouvelle façon de se brosser les dents'
     }
   },
   en: {
@@ -21,10 +27,16 @@ const resources = {
       education: 'education',
       pricing: 'pricing',
       aboutTitle: "I'm",
-      aboutDescription: 'Developer Full Stack',
+      aboutDescription: 'Developer Full Stack - Freelance',
       address: 'Address',
       available: 'Available',
-      skillsTitle: 'Professional skills'
+      unavailable: 'Unavailable',
+      skillsTitle: 'Professional skills',
+      matchaSubtitle: 'Dating web and mobile application',
+      laliloSubtitle: 'Phonics & comprehension program',
+      ouispoonSubtitle: 'Collaborative platform',
+      opus1IoSubtitle: 'Manage your service business more efficiently',
+      willoSubtitle: 'New way to brush your teeth'
     }
   }
 };
