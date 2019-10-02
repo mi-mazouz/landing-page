@@ -30,9 +30,27 @@
     />
   </head>
   <body>
+    <div class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <div class="modal-card-head">
+          <div class="modal-card-title__container">
+            <p class="modal-card-title"></p>
+            <p class="modal-card-subtitle"></p>
+          </div>
+          <button
+            class="delete"
+            aria-label="close"
+            onclick="handleModal()"
+          ></button>
+        </div>
+        <p class="modal-card-body"></p>
+      </div>
+    </div>
     <header id="header"></header>
     <section id="about" class="section"></section>
     <section id="skills" class="section"></section>
+    <section id="portfolio" class="section"></section>
     <footer class="footer"></footer>
   </body>
   <script>
@@ -40,12 +58,14 @@
       $('#header').load('html/header.html');
       $('#about').load('html/about.html');
       $('#skills').load('html/skills.html');
+      $('#portfolio').load('html/portfolio.html');
     });
     $(document).ready(function() {
       $.getScript('./js/index.js');
       $.getScript('./js/header.js');
       $.getScript('./js/about.js');
       $.getScript('./js/skills.js');
+      $.getScript('./js/portfolio.js');
       $.getScript('./js/i18next.js');
     });
   </script>

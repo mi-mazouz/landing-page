@@ -2,6 +2,7 @@
 @import './header.less';
 @import './about.less';
 @import './skills.less';
+@import './portfolio.less';
 @import './normalize.less';
 
 body {
@@ -22,4 +23,56 @@ section {
 
 footer {
   background-color: transparent !important;
+}
+
+.button:focus:not(:active) {
+  box-shadow: none;
+}
+
+button {
+  outline: none;
+}
+
+.modal-card,
+.modal-content {
+  @media screen and (max-width: 769px) {
+    width: 90%;
+  }
+}
+
+.modal-card-head {
+  background-color: #efefef;
+  justify-content: space-between;
+}
+
+.modal-card-title__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-card-title {
+  color: #3d4451;
+  font-size: 24px;
+  line-height: 1.2;
+  font-family: 'open-sans-semibold';
+}
+
+.modal-card-subtitle {
+  flex-grow: 1;
+  flex-shrink: 0;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #3d4451;
+  font-size: 13px;
+  font-family: 'open-sans-regular';
+}
+
+.modal-card-body {
+  white-space: pre-line;
+  font-size: 15px;
+  line-height: 20px;
+  color: #9da0a7;
+  font-family: 'open-sans-regular';
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }

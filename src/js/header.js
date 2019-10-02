@@ -19,8 +19,10 @@ function handleHeaderItemSection() {
     const offsetTop = $(section).offset().top;
 
     if (
-      scrollTop >= offsetTop - 1 &&
-      scrollTop <= offsetTop + section.offsetHeight - 1
+      ((section.id === 'about' && scrollTop >= offsetTop - 1) ||
+        (section.id !== 'about' &&
+          scrollTop >= offsetTop - window.innerHeight / 4)) &&
+      scrollTop <= offsetTop + section.offsetHeight - window.innerHeight / 4
     ) {
       links.map((_, link) => {
         $(link).addClass('menu-item-selected');
