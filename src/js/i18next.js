@@ -11,6 +11,22 @@ const resources = {
       available: 'Disponible',
       unavailable: 'Indisponible',
       skillsTitle: 'Compétence professionnelle',
+      servicesTitle: 'Comment je travail ?',
+      servicesDescription:
+        "Je vous accompagne dans la réalisation de vos projets pour vous apporter une solution clef en main.\n\n• Définission de vos besoins.\n• Réalisation de la maquette si vous ne la fournissez pas.\n• Communication régulière avec des phases d'itération.\n• Une fois satisfait du résultat, le produit est livré et mis en ligne.\n• Maintenance en continue.",
+      servicesPrivateLessonTitle: 'Cours Particulier/Groupe',
+      servicesPrivateLessonDescription:
+        'Seul ou en groupe, nous travaillons ensemble sur des projets de votre niveau avec le suivi de votre progression.',
+      servicesMobileApplicationTitle: 'Application Mobile',
+      servicesMobileApplicationDescription:
+        'Application Android & IOS, progressive web app.',
+      servicesUIUXDescription: 'Maquette.',
+      servicesHostingAndMaintenanceTitle: 'Hébergement & Maintenance',
+      servicesHostingAndMaintenanceDescription:
+        'Hébergement mobile et Web, nom de domaine, certificat SSL, correction de bugs, mise à jour...',
+      servicesWebDevelopmentTitle: 'Développement web',
+      servicesWebDevelopmentDescription:
+        'Sites vitrines, sites e-commerce, sites institutionnels, blog...',
       matchaSubtitle: 'Site de rencontre web et mobile (en progression 🚧)',
       matchaDescription:
         "Matcha est un site de rencontres permettant à un utilisateur ayant renseigné ses détails personnels et ses préférences de rencontrer l'amour. Grace à un algorithme de matching les utilisateurs se veront proposer d'autre utilisateurs en fonction de leurs points communs. Une fois qu’ils se sont réciproquement matchés les utilisateurs pourront alors échanger via un chat privé. Je travaille actuellement dessus.",
@@ -40,6 +56,22 @@ const resources = {
       available: 'Available',
       unavailable: 'Unavailable',
       skillsTitle: 'Professional skills',
+      servicesTitle: 'How I work?',
+      servicesDescription:
+        'I accompany you in the realization of your projects to bring you a turnkey solution.\n\n• Definition of your needs.\n• Realization of the mockup if you did not provide it.\n• Regular communication with phases of iteration.\n• Once satisfied with the result, the product is delivered and put online.\n• Continuous maintenance.',
+      servicesPrivateLessonTitle: 'Private/Group Lesson',
+      servicesPrivateLessonDescription:
+        'Alone or in a group, we work together on projects of your level with the monitoring of your progress.',
+      servicesMobileApplicationTitle: 'Mobile Application',
+      servicesMobileApplicationDescription:
+        'Android & IOS applications, progressive web app.',
+      servicesUIUXDescription: 'Mockup.',
+      servicesHostingAndMaintenanceTitle: 'Hosting & Maintenance',
+      servicesHostingAndMaintenanceDescription:
+        'Mobile & web Hosting, domain name, SSL certificate, bug fixing, update...',
+      servicesWebDevelopmentTitle: 'Web Development',
+      servicesWebDevelopmentDescription:
+        'Landing page, e-commerce, institutional website, blog...',
       matchaSubtitle: 'Dating web and mobile application (work in progress 🚧)',
       matchaDescription:
         "Matcha is a dating site that allows a user who has informed his personal details and preferences to meet love. Thanks to a matching algorithm users will be offered other users based on their common points. Once they have reciprocally matched they can exchange via a private chat. I'm currently working on it.",

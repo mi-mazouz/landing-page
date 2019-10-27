@@ -1,5 +1,5 @@
 function handleItemHover() {
-  const items = $('.item-container').toArray();
+  const items = $('.portfolio__item-container').toArray();
 
   items.map(item => {
     const iconsContainer = $(item).find('.icons-container');
@@ -51,7 +51,7 @@ let portfolioItemIndex = 0;
 const portfolioItems = [
   `<div class="column is-6 animated slideInLeft">
     <div
-      class="item-container"
+      class="portfolio__item-container"
       style="background-image: url(https://res.cloudinary.com/dxnck6njo/image/upload/v1570325546/personal-landing/matcha-screen.png);"
     >
       <div>

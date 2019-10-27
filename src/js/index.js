@@ -18,7 +18,7 @@ function handleModal(title, subtitleKey, bodyText) {
   }
 
   html.addClass('is-clipped');
-  $(modal.find('.modal-card-title')).text(title);
+  $(modal.find('.modal-card-title')).text(i18next.t(title));
   $(modal.find('.modal-card-subtitle')).text(i18next.t(subtitleKey));
   $(modal.find('.modal-card-body').text(i18next.t(bodyText)));
   $(modal).addClass('is-active');
