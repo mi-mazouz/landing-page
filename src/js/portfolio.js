@@ -49,7 +49,7 @@ function handleItemHover() {
 
 let portfolioItemIndex = 0;
 const portfolioItems = [
-  `<div class="column is-6 animated slideInLeft">
+  `<div class="column is-6 animated slideInLeft faster">
     <div
       class="portfolio__item-container"
       style="background-image: url(https://res.cloudinary.com/dxnck6njo/image/upload/v1570325546/personal-landing/matcha-screen.png);"
@@ -81,9 +81,11 @@ function handleShowMoreOrLessPortfolioItems() {
   if (portfolioItemIndex >= portfolioItems.length) {
     const addIcon = $('.portfolio__container').find("ion-icon[name='remove']");
 
-    const newItems = [...items];
-    newItems.splice(items.length - portfolioItemIndex);
-    itemsContainer.html(newItems);
+    items.map((index, item) => {
+      if (portfolioItemIndex + index > 4) {
+        $(item).toggle(500, () => $(item).remove());
+      }
+    });
 
     portfolioItemIndex = 0;
     addIcon.attr('name', 'add');

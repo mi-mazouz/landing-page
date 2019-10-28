@@ -48,10 +48,13 @@
       </div>
     </div>
     <header id="header"></header>
-    <section id="about" class="section"></section>
-    <section id="skills" class="section"></section>
-    <section id="portfolio" class="section"></section>
-    <section id="services" class="section"></section>
+    <div class="section_container">
+      <section id="about" class="section"></section>
+      <section id="skills" class="section"></section>
+      <section id="portfolio" class="section"></section>
+      <section id="services" class="section"></section>
+      <section id="experience" class="section"></section>
+    </div>
     <footer class="footer"></footer>
   </body>
   <script>
@@ -61,6 +64,7 @@
       $('#skills').load('html/skills.html');
       $('#portfolio').load('html/portfolio.html');
       $('#services').load('html/services.html');
+      $('#experience').load('html/experience.html');
     });
     $(document).ready(function() {
       $.getScript('./js/index.js');
