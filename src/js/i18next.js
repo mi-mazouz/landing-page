@@ -98,20 +98,22 @@ const config = {
 };
 
 function updateContent() {
-  Object.keys(resources[i18next.language].translation).map(function(htmlName) {
-    const elementsToTranslate = document.getElementsByName(htmlName);
+  Object.keys(resources[i18next.language.split('-')[0]].translation).map(
+    function(htmlName) {
+      const elementsToTranslate = document.getElementsByName(htmlName);
 
-    [...elementsToTranslate].map(element => {
-      element.innerHTML = i18next.t(htmlName);
-    });
-  });
+      [...elementsToTranslate].map(element => {
+        element.innerHTML = i18next.t(htmlName);
+      });
+    }
+  );
 }
 
 function changeLanguage(language) {
   i18next.changeLanguage(language);
 }
 
-i18next.use(i18nextBrowserLanguageDetector).init(config, function(error) {
+i18next.use(i18nextBrowserLanguageDetector).init(config, () => {
   updateContent();
 });
 

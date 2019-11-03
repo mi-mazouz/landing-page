@@ -76,6 +76,3 @@ function handleNavBarCss() {
       });
   }
 }
-
-handleNavBarCss();
-handleHeaderItemSection();

@@ -5,7 +5,7 @@
     <meta property="og:title" content="Mickael Mazouz" />
     <meta
       property="og:image"
-      content="https://res.cloudinary.com/dxnck6njo/image/upload/v1568945832/personal-landing/profile-picture.jpg"
+      content="https://res.cloudinary.com/dxnck6njo/image/upload/v1572819397/personal-landing/favicon.png"
     />
     <meta property="og:descriptio" content="Mickael Mazouz Website" />
     <meta property="og:url" content="https://mi-mazouz.com" />
@@ -23,7 +23,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet/less" type="text/css" href="css/index.less" />
-    <link rel="icon" type="image/png" href="./assets//favicon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://res.cloudinary.com/dxnck6njo/image/upload/v1572819397/personal-landing/favicon.png"
+    />
     <script
       type="module"
       src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
@@ -75,12 +79,19 @@
       $('#experience').load('html/experience.html');
     });
     $(document).ready(function() {
-      $.getScript('./js/header.js');
-      $.getScript('./js/about.js');
-      $.getScript('./js/skills.js');
-      $.getScript('./js/portfolio.js');
-      $.getScript('./js/i18next.js');
-      $.getScript('./js/index.js');
+      $.getScript('./js/header.js').done(() => {
+        $.getScript('./js/about.js').done(() => {
+          $.getScript('./js/skills.js').done(() => {
+            $.getScript('./js/portfolio.js').done(() => {
+              $.getScript('./js/portfolio.js').done(() => {
+                $.getScript('./js/i18next.js').done(() => {
+                  $.getScript('./js/index.js');
+                });
+              });
+            });
+          });
+        });
+      });
     });
   </script>
 </html>

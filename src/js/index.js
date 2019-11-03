@@ -38,5 +38,23 @@ function isMobile() {
   return isMobile;
 }
 
+function init() {
+  handleNavBarCss();
+  handleHeaderItemSection();
+
+  const hash = $(window.location.hash);
+  if (hash.length > 0) {
+    $('html, body')
+      .delay(500)
+      .animate(
+        {
+          scrollTop: hash.offset().top
+        },
+        1000
+      );
+  }
+}
+
+init();
 window.onscroll = handleWindowScroll;
 window.onresize = handleWindowResize;
