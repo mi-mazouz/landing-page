@@ -20,7 +20,7 @@ const resources = {
       servicesMobileApplicationTitle: 'Application Mobile',
       servicesMobileApplicationDescription:
         'Application Android & IOS, progressive web app.',
-      servicesUIUXDescription: 'Maquette.',
+      servicesUIUXDescription: 'En travaillant de très près avec un designer, nous pouvons réaliser la maquette de votre projet.',
       servicesHostingAndMaintenanceTitle: 'Hébergement & Maintenance',
       servicesHostingAndMaintenanceDescription:
         'Hébergement mobile et Web, nom de domaine, certificat SSL, correction de bugs, mise à jour...',
@@ -29,10 +29,10 @@ const resources = {
         'Sites vitrines, sites e-commerce, sites institutionnels, blog...',
       matchaSubtitle: 'Site de rencontre web et mobile (en progression 🚧)',
       matchaDescription:
-        "Matcha est un site de rencontres permettant à un utilisateur ayant renseigné ses détails personnels et ses préférences de rencontrer l'amour. Grace à un algorithme de matching les utilisateurs se veront proposer d'autre utilisateurs en fonction de leurs points communs. Une fois qu’ils se sont réciproquement matchés les utilisateurs pourront alors échanger via un chat privé. Je travaille actuellement dessus.",
+        "Matcha est un site de rencontres permettant à un utilisateur ayant renseigné ses détails personnels et ses préférences de rencontrer l'amour.\n\nGrace à un algorithme de matching les utilisateurs se veront proposer d'autre utilisateurs en fonction de leurs points communs. Une fois qu’ils se sont réciproquement matchés les utilisateurs pourront alors échanger via un chat privé. Je travaille actuellement dessus.",
       laliloSubtitle: 'Programme de phonétique et de compréhension',
       laliloDescription:
-        "Lalilo est un programme d'apprentissage à la lecture en ligne conçu par des enseignants pour les enseignants et leurs élèves. Il soutient la croissance des étudiants en classe et à la maison. Les étudiants travaillent sur des exercices d'adaptation en phonétique, en reconnaissance de mots et en compréhension. Les enseignants peuvent suivre toute la classe et les progrès individuels. Ils peuvent également assigner des leçons spécifiques.\n\nJ'ai travaillé sur l'espace professeur ainsi que celle des étudiants.",
+        "Lalilo est un programme d'apprentissage à la lecture en ligne conçu par des enseignants pour les enseignants et leurs élèves. Il soutient la croissance des étudiants en classe et à la maison.\n\nLes étudiants travaillent sur des exercices d'adaptation en phonétique, en reconnaissance de mots et en compréhension. Les enseignants peuvent suivre toute la classe et les progrès individuels. Ils peuvent également assigner des leçons spécifiques.\n\nJ'ai travaillé sur l'espace professeur ainsi que celle des étudiants.",
       ouispoonSubtitle: 'Plate-forme collaborative',
       ouispoonDescription:
         "OuiSpoon est une platforme collaborative dédié à la création de rencontres (instructives, sportives, culturelles, ou festives) pour améliorer la qualité de vie au travail  et centraliser l'ensemble des événements de votre entreprise.\n\nJ'ai travaillé l'application web utilisateur ainsi que la partie administrateur, la partie utilisateur permet de créer/participer à des événements, voir la liste de ses collègues, poster des nouvelles, voir les actualités du moment, créer/rejoindre/supprimer un groupe et bien plus encore...\n\n La partie administrateur permet selon des rôles définis de modifier/créer/supprimer une nouvelle utilisateur, de voir les statistiques sur ce qui se passe sur l'espace utilisateur et plus encore...",
@@ -65,7 +65,7 @@ const resources = {
       servicesMobileApplicationTitle: 'Mobile Application',
       servicesMobileApplicationDescription:
         'Android & IOS applications, progressive web app.',
-      servicesUIUXDescription: 'Mockup.',
+      servicesUIUXDescription: 'By working very closely with a designer, we can make the mockup of your project.',
       servicesHostingAndMaintenanceTitle: 'Hosting & Maintenance',
       servicesHostingAndMaintenanceDescription:
         'Mobile & web Hosting, domain name, SSL certificate, bug fixing, update...',
@@ -74,10 +74,10 @@ const resources = {
         'Landing page, e-commerce, institutional website, blog...',
       matchaSubtitle: 'Dating web and mobile application (work in progress 🚧)',
       matchaDescription:
-        "Matcha is a dating site that allows a user who has informed his personal details and preferences to meet love. Thanks to a matching algorithm users will be offered other users based on their common points. Once they have reciprocally matched they can exchange via a private chat. I'm currently working on it.",
+        "Matcha is a dating site that allows a user who has informed his personal details and preferences to meet love.\n\nThanks to a matching algorithm users will be offered other users based on their common points. Once they have reciprocally matched they can exchange via a private chat.",
       laliloSubtitle: 'Phonics & comprehension program',
       laliloDescription:
-        'Lalilo is an online literacy program built by teachers for teachers and their students. It supports student growth in the classroom and at home. Students work on adaptive exercises in phonics, word recognition, and comprehension. Teachers can track whole class and individual progress. They can also assign specific lessons. I worked on the teacher space as well as that of the students.',
+        'Lalilo is an online literacy program built by teachers for teachers and their students. It supports student growth in the classroom and at home.\n\nStudents work on adaptive exercises in phonics, word recognition, and comprehension. Teachers can track whole class and individual progress. They can also assign specific lessons.\n\nI worked on the teacher space as well as that of the students.',
       ouispoonSubtitle: 'Collaborative platform',
       ouispoonDescription:
         'OuiSpoon is a collaborative platform dedicated to creating meetings (informative, sporting, cultural, or festive) to improve the quality of life at work and centralize all the events of your company.\n\nI made the web application user as well as the administrator part, the user part allows to create/participate in events, see the list of colleagues, post news, see the news of the moment, create/join/delete a group and much more... \n\nThe administrateur part allows according to defined roles to modify/create/delete a new user, the statistics on what is happening on the user space and more...',
@@ -99,7 +99,7 @@ const config = {
 
 function updateContent() {
   Object.keys(resources[i18next.language.split('-')[0]].translation).map(
-    function(htmlName) {
+    function (htmlName) {
       const elementsToTranslate = document.getElementsByName(htmlName);
 
       [...elementsToTranslate].map(element => {
@@ -117,6 +117,6 @@ i18next.use(i18nextBrowserLanguageDetector).init(config, () => {
   updateContent();
 });
 
-i18next.on('languageChanged', function() {
+i18next.on('languageChanged', function () {
   updateContent();
 });
