@@ -1,6 +1,7 @@
 function handleWindowScroll() {
   handleNavBarCss();
   handleHeaderItemSection();
+  handleExperienceItemsAnimation();
 }
 
 function handleWindowResize() {

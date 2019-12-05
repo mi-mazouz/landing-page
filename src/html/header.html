@@ -1,45 +1,24 @@
 <div class="header__background"></div>
 <div class="navbar-mobile">
-  <i
-    id="close-menu-button"
-    onclick="onCloseMenuButtonClick()"
-    class="material-icons header__menu-close-icon"
-    >close</i
-  >
+  <i id="close-menu-button" onclick="onCloseMenuButtonClick()" class="material-icons header__menu-close-icon">close</i>
   <div class="header__mobile-menu-item-container">
     <a href="#about" name="about">about</a>
     <a href="#skills" name="skills">skills</a>
     <a href="#portfolio" name="portfolio">portfolio</a>
     <a href="#services" name="services">services</a>
-    <a name="experience">experience</a>
+    <a href="#experience" name="experience">experience</a>
     <a name="education">education</a>
   </div>
 </div>
-<nav
-  class="navbar animated fadeInDown"
-  role="navigation"
-  aria-label="main navigation"
->
+<nav class="navbar animated fadeInDown" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <div class="navbar-item header__traduction-container">
-      <img
-        src="../assets/france-flag-round-icon.png"
-        onclick="changeLanguage('fr')"
-      />
-      <img
-        src="../assets/united-states-of-america-flag-round.png"
-        onclick="changeLanguage('en')"
-      />
+      <img src="../assets/france-flag-round-icon.png" onclick="changeLanguage('fr')" />
+      <img src="../assets/united-states-of-america-flag-round.png" onclick="changeLanguage('en')" />
     </div>
 
-    <a
-      id="menu-button"
-      role="button"
-      onclick="onMenuButtonClick()"
-      class="navbar-burger button"
-      aria-label="menu"
-      aria-expanded="false"
-    >
+    <a id="menu-button" role="button" onclick="onMenuButtonClick()" class="navbar-burger button" aria-label="menu"
+      aria-expanded="false">
       menu
     </a>
   </div>
@@ -67,7 +46,7 @@
         </a>
       </div>
       <div class="navbar-item">
-        <a name="experience">
+        <a href="#experience" name="experience">
           experience
         </a>
       </div>

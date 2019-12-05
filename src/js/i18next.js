@@ -41,7 +41,15 @@ const resources = {
         "Opus1.io est la solution idéale pour les entreprises de services aux particuliers, petites ou grandes, en particulier dans les secteurs de l'éducation, des arts de la scène, du bien-être et de la santé, des sports et des loisirs.\n\nJ'ai travaillé l'application web permettant de souscrire à une classe, de réserver des cours, payer ses factures et plus encore...",
       willoSubtitle: 'Une nouvelle façon de se brosser les dents',
       willoDescription:
-        "Dédié à l'amélioration de l'efficacité des soins bucco-dentaires à la maison, Willo à créer une machine qui permet d’apporter le meilleur nettoyage à tout le monde. Le brossage personnalisé et automatisé de Willo permet d’atteindre des niveaux d’efficacité jamais vus, sans exclusion.\n\nJ'ai travaillé l'application mobile permettant de communiquer avec la machine. Elle permet de gérer les profils utilisateurs, de communiquer un nouveau cycle de brossage, de commander des nouveaux produits et plus encore..."
+        "Dédié à l'amélioration de l'efficacité des soins bucco-dentaires à la maison, Willo à créer une machine qui permet d’apporter le meilleur nettoyage à tout le monde. Le brossage personnalisé et automatisé de Willo permet d’atteindre des niveaux d’efficacité jamais vus, sans exclusion.\n\nJ'ai travaillé l'application mobile permettant de communiquer avec la machine. Elle permet de gérer les profils utilisateurs, de communiquer un nouveau cycle de brossage, de commander des nouveaux produits et plus encore...",
+      laliloJobDate: 'Juin 2017 - mars 2018',
+      laliloJobDescription: 'Nous avons construit une API nodeJS et une application web React from scratch. J\'ai également travaillé sur une API python chargée de choisir le prochain exercice le plus approprié pour l\'étudiant.',
+      opus1JobDate: 'Août 2018 - Octobre 2018',
+      opus1JobDescription: 'Pendant 2 mois, j\'ai travaillé sur la partie front de l\'application qui était en React. Malheureusement, il n\'y avait aucune possibilité d\'évolution et pas assez de défis pour moi, alors j\'ai quitté Opus1.',
+      ouispoonJobDate: 'Novembre 2018 - Avril 2019',
+      ouispoonJobDescription: 'J\'ai travaillé des deux côtés, front et back. L\'API était en nodeJS et l\'application web en React. J\'ai quitté OuiSpoon pour une opportunité à New York.',
+      willoJobDate: 'Mai 2019 - Maintenant',
+      willoJobDescription: 'Je suis en charge de l\'application mobile et de l\'API. L\'application mobile est en React Native et l\'API en nodeJS.'
     }
   },
   en: {
@@ -86,7 +94,15 @@ const resources = {
         'Opus1.io is an ideal solution for personal services businesses, small to large, especially in the Education, Performing Arts, Wellness & Health, Sports and Leisure industries.\n\nI built the web application who allow you to subscribe to a class, book courses, pay bills and more...',
       willoSubtitle: 'New way to brush your teeth',
       willoDescription:
-        'Devoted to advancing the efficacy of at-home oral care, Willo created a machine to help bring the best clean to absolutely everyone. The personalized, automated brushing of Willo allows never before seen levels of efficacy to be reached, without exclusion.\n\nI built the mobile application to communicate with the device. It can manage user profiles, communicate a new brushing cycle, order new products and more...'
+        'Devoted to advancing the efficacy of at-home oral care, Willo created a machine to help bring the best clean to absolutely everyone. The personalized, automated brushing of Willo allows never before seen levels of efficacy to be reached, without exclusion.\n\nI built the mobile application to communicate with the device. It can manage user profiles, communicate a new brushing cycle, order new products and more...',
+      laliloJobDate: 'June 2017 - march 2018',
+      laliloJobDescription: 'We build a nodeJS API and a React web app from scratch. I also worked on a python API who was in charge to choose the most appropriate next exercise for the student.',
+      opus1JobDate: 'August 2018 - October 2018',
+      opus1JobDescription: 'During 2 months, I worked on the front part of the application who was in React. Unfortunately there was no possibilities of evolution and no enough challenges for me so I quit Opus1.',
+      ouispoonJobDate: 'November 2018 - April 2019',
+      ouispoonJobDescription: 'I worked on both sides, front and back. The api was in nodeJS and the web application in React. I quit OuiSpoon for an opportunity in New York.',
+      willoJobDate: 'May 2019 - Now',
+      willoJobDescription: 'I\'m in charge of the mobile application and the API. The mobile app is in React Native and the API in nodeJS.'
     }
   }
 };

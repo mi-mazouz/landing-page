@@ -1,97 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Mickaël Mazouz</title>
-    <meta property="og:title" content="Mickael Mazouz" />
-    <meta
-      property="og:image"
-      content="https://res.cloudinary.com/dxnck6njo/image/upload/v1572819397/personal-landing/favicon.png"
-    />
-    <meta property="og:descriptio" content="Mickael Mazouz Website" />
-    <meta property="og:url" content="https://mi-mazouz.com" />
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet/less" type="text/css" href="css/index.less" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="https://res.cloudinary.com/dxnck6njo/image/upload/v1572819397/personal-landing/favicon.png"
-    />
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/17.0.14/i18next.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/3.0.3/i18nextBrowserLanguageDetector.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
-    />
-  </head>
-  <body>
-    <div class="modal">
-      <div class="modal-background"></div>
-      <div class="modal-card">
-        <div class="modal-card-head">
-          <div class="modal-card-title__container">
-            <p class="modal-card-title"></p>
-            <p class="modal-card-subtitle"></p>
-          </div>
-          <button
-            class="delete"
-            aria-label="close"
-            onclick="handleModal()"
-          ></button>
+
+<head>
+  <title>Mickaël Mazouz</title>
+  <meta property="og:title" content="Mickael Mazouz" />
+  <meta property="og:image"
+    content="https://res.cloudinary.com/dxnck6njo/image/upload/v1572819397/personal-landing/favicon.png" />
+  <meta property="og:descriptio" content="Mickael Mazouz Website" />
+  <meta property="og:url" content="https://mi-mazouz.com" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet/less" type="text/css" href="css/index.less" />
+  <link rel="icon" type="image/png"
+    href="https://res.cloudinary.com/dxnck6njo/image/upload/v1572819397/personal-landing/favicon.png" />
+  <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/17.0.14/i18next.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/3.0.3/i18nextBrowserLanguageDetector.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+</head>
+
+<body>
+  <div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <div class="modal-card-head">
+        <div class="modal-card-title__container">
+          <p class="modal-card-title"></p>
+          <p class="modal-card-subtitle"></p>
         </div>
-        <p class="modal-card-body"></p>
+        <button class="delete" aria-label="close" onclick="handleModal()"></button>
       </div>
+      <p class="modal-card-body"></p>
     </div>
-    <header id="header"></header>
-    <div class="section_container">
-      <section id="about" class="section"></section>
-      <section id="skills" class="section"></section>
-      <section id="portfolio" class="section"></section>
-      <section id="services" class="section"></section>
-      <section id="experience" class="section"></section>
-    </div>
-    <footer class="footer"></footer>
-  </body>
-  <script>
-    $(function() {
-      $('#header').load('html/header.html');
-      $('#about').load('html/about.html');
-      $('#skills').load('html/skills.html');
-      $('#portfolio').load('html/portfolio.html');
-      $('#services').load('html/services.html');
-      $('#experience').load('html/experience.html');
-    });
-    $(document).ready(function() {
-      $.getScript('./js/header.js').done(() => {
-        $.getScript('./js/about.js').done(() => {
-          $.getScript('./js/skills.js').done(() => {
+  </div>
+  <header id="header"></header>
+  <div class="section_container">
+    <section id="about" class="section"></section>
+    <section id="skills" class="section"></section>
+    <section id="portfolio" class="section"></section>
+    <section id="services" class="section"></section>
+    <section id="experience" class="section"></section>
+  </div>
+  <footer class="footer"></footer>
+</body>
+<script>
+  $(function () {
+    $('#header').load('html/header.html');
+    $('#about').load('html/about.html');
+    $('#skills').load('html/skills.html');
+    $('#portfolio').load('html/portfolio.html');
+    $('#services').load('html/services.html');
+    $('#experience').load('html/experience.html');
+  });
+  $(document).ready(function () {
+    $.getScript('./js/header.js').done(() => {
+      $.getScript('./js/about.js').done(() => {
+        $.getScript('./js/skills.js').done(() => {
+          $.getScript('./js/portfolio.js').done(() => {
             $.getScript('./js/portfolio.js').done(() => {
-              $.getScript('./js/portfolio.js').done(() => {
+              $.getScript('./js/experience.js').done(() => {
                 $.getScript('./js/i18next.js').done(() => {
                   $.getScript('./js/index.js');
                 });
-              });
+              })
             });
           });
         });
       });
     });
-  </script>
+  });
+</script>
+
 </html>
