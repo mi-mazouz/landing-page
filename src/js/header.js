@@ -59,9 +59,9 @@ function handleNavBarCss() {
 
     // prettier-ignore
     navbar.children().children().find('.navbar-item').map((_, element) => {
-        // prettier-ignore
-        $(element).children().css('color', '#3d4451');
-      });
+      // prettier-ignore
+      $(element).children().css('color', '#3d4451');
+    });
   } else {
     navbar.removeClass('is-fixed-top');
     navbar.css('backgroundColor', 'transparent');
@@ -71,8 +71,8 @@ function handleNavBarCss() {
 
     // prettier-ignore
     navbar.children().children().find('.navbar-item').map((_, element) => {
-        // prettier-ignore
-        $(element).children().css('color', 'rgba(255, 255, 255, 0.7)');
-      });
+      // prettier-ignore
+      $(element).children().css('color', 'rgba(255, 255, 255, 0.7)');
+    });
   }
 }
