@@ -1,5 +1,5 @@
-function handleExperienceItemsAnimation() {
-  const itemsContainer = $('.experience__container .timeline_container .column').children('div');
+function handleEducationItemsAnimation() {
+  const itemsContainer = $('.education__container .timeline_container .column').children('div');
   const scrollTop = $(this).scrollTop();
 
   itemsContainer.map((index, item) => {

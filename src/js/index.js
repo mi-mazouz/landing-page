@@ -2,6 +2,7 @@ function handleWindowScroll() {
   handleNavBarCss();
   handleHeaderItemSection();
   handleExperienceItemsAnimation();
+  handleEducationItemsAnimation();
 }
 
 function handleWindowResize() {

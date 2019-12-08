@@ -46,6 +46,7 @@
     <section id="services" class="section"></section>
     <section id="experience" class="section"></section>
     <section id="education" class="section"></section>
+    <section id="pricing" class="section"></section>
   </div>
   <footer class="footer"></footer>
 </body>
@@ -58,6 +59,7 @@
     $('#services').load('html/services.html');
     $('#experience').load('html/experience.html');
     $('#education').load('html/education.html');
+    $('#pricing').load('html/pricing.html');
   });
   $(document).ready(function () {
     $.getScript('./js/header.js').done(() => {
@@ -66,8 +68,10 @@
           $.getScript('./js/portfolio.js').done(() => {
             $.getScript('./js/portfolio.js').done(() => {
               $.getScript('./js/experience.js').done(() => {
-                $.getScript('./js/i18next.js').done(() => {
-                  $.getScript('./js/index.js');
+                $.getScript('./js/education.js').done(() => {
+                  $.getScript('./js/i18next.js').done(() => {
+                    $.getScript('./js/index.js');
+                  });
                 });
               })
             });

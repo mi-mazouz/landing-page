@@ -50,7 +50,10 @@ const resources = {
       ouispoonJobDate: 'Novembre 2018 - Avril 2019',
       ouispoonJobDescription: 'J\'ai travaillé des deux côtés, front et back. L\'API était en nodeJS et l\'application web en React. J\'ai quitté OuiSpoon pour une opportunité à New York.',
       willoJobDate: 'Mai 2019 - Maintenant',
-      willoJobDescription: 'Je suis en charge de l\'application mobile et de l\'API. L\'application mobile est en React Native et l\'API en nodeJS.'
+      willoJobDescription: 'Je suis en charge de l\'application mobile et de l\'API. L\'application mobile est en React Native et l\'API en nodeJS.',
+      date42: 'Novembre 2015 - Maintenant',
+      title42: 'École 42',
+      description42: 'Programmation'
     }
   },
   en: {
@@ -104,7 +107,10 @@ const resources = {
       ouispoonJobDate: 'November 2018 - April 2019',
       ouispoonJobDescription: 'I worked on both sides, front and back. The api was in nodeJS and the web application in React. I quit OuiSpoon for an opportunity in New York.',
       willoJobDate: 'May 2019 - Now',
-      willoJobDescription: 'I\'m in charge of the mobile application and the API. The mobile app is in React Native and the API in nodeJS.'
+      willoJobDescription: 'I\'m in charge of the mobile application and the API. The mobile app is in React Native and the API in nodeJS.',
+      date42: 'November 2015 - Now',
+      title42: '42 School',
+      description42: 'Programming'
     }
   }
 };
